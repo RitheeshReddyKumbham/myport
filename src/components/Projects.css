@@ -1,0 +1,68 @@
+/* src/components/Projects.css */
+.projects-section {
+    padding: 4rem 2rem; /* Ample spacing for better layout */
+    background: linear-gradient(to right, #1e3a8a, #10b981); /* Blue to Green Gradient */
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e4f0f8; /* Navy Blue for consistency */
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Space between items */
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background-color: #f9fafb; /* Light gray card background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded edges for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px; /* Uniform height for images */
+    object-fit: cover; /* Ensures consistent image display */
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827; /* Dark gray for readability */
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #6b7280; /* Medium gray for text */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2563eb; /* Bright blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #1e40af; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+/* In your CSS file */

@@ -1,0 +1,63 @@
+/* src/components/Hero.css */
+.hero-section {
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #1e3a8a, #10b981); /* Blue to Green Gradient */
+    color: white;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem; /* Default for smaller screens */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #d1fae5; /* Light Green Accent */
+  }
+  
+  .hero-button {
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: #1e3a8a; /* Navy Blue */
+    font-weight: 600;
+    border-radius: 9999px; /* Fully rounded button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .hero-button:hover {
+    background-color: #e5e7eb; /* Light Gray */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 4rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.75rem;
+    }
+  }
+  
